@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "11ded043-8b06-47f0-888e-f13fce15a197",
+		"name": "EmployeeManagement using Nestjs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllDeptWithEmployees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/department",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"department"
+					]
+				},
+				"description": "getAllDeptWithEmployees"
+			},
+			"response": []
+		},
+		{
+			"name": "getEmployeesByDeptId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/department/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"department",
+						"1"
+					]
+				},
+				"description": "getEmployeesByDeptId"
+			},
+			"response": []
+		},
+		{
+			"name": "CreateNewDepartment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"DeptName\": \"Cement\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/department/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"department",
+						"create"
+					]
+				},
+				"description": "CreateNewDepartment"
+			},
+			"response": []
+		},
+		{
+			"name": "CreateNewEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"EmpName\": \"Velammal\",\r\n    \"Designation\": \"Lead Engineer\",\r\n    \"Salary\": 75000,\r\n    \"deptId\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/employee/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employee",
+						"create"
+					]
+				},
+				"description": "CreateNewEmployee"
+			},
+			"response": []
+		},
+		{
+			"name": "updateEmp",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Designation\": \"Lead Engineer\",\r\n    \"Salary\": 75000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/employee/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employee",
+						"1"
+					]
+				},
+				"description": "updateEmp"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteEmp",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/employee/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employee",
+						"1"
+					]
+				},
+				"description": "deleteEmp"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllEmployees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employee"
+					]
+				},
+				"description": "getAllEmployees"
+			},
+			"response": []
+		}
+	]
+}
