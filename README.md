@@ -11,11 +11,13 @@ nest new project-name
 eg: $ nest new server
 
 cd server
+
 $ npm install
 
 $ npm run start
 
 ## To Run
 
-# watch mode
+## watch mode
+
 $ npm run start:dev
