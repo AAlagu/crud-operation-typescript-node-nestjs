@@ -14,9 +14,9 @@ cd server
 
 $ npm install
 
-$ npm run start
-
 ## To Run
+
+$ npm run start
 
 ## watch mode
 
